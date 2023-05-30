@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ekart - Online Shopping</title>
+  <style>
+    /* CSS for animations */
+    @keyframes slideIn {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    /* CSS for layout and styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .product {
+      width: 300px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      animation: slideIn 0.5s ease-in-out;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #888;
+    }
+
+    .payment-button {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .payment-button button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ekart - Online Shopping</h1>
+  </header>
+
+  <main>
+    <div class="product">
+      <img src="images\product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>Introducing our men's Big Checks Roadster shirt, a bold and stylish choice for the modern man. This shirt features a striking large checks pattern that exudes confidence and adds a unique flair to your outfit. Crafted with meticulous attention to detail, it is made from premium quality fabric to ensure comfort and durability. The button-down design and spread collar enhance its versatile appeal, making it suitable for both formal and casual occasions. Whether you're heading to the office or going out for a night on the town, this Big Checks Roadster shirt will make you stand out from the crowd. Embrace your individuality and make a fashion statement with our men's Big Checks Roadster shirt. <br><br><strong>Price-Rs. 4500</strong> </p>
+    </div>
+
+    <div class="product">
+      <img src="images\product2.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>Introducing our men's checks shirt, a wardrobe essential for the modern gentleman. This shirt features a timeless checks pattern that adds a touch of sophistication to any ensemble. Crafted with precision from high-quality fabric, it offers exceptional comfort and durability. The button-down design and classic collar make it suitable for both formal and casual occasions. Whether you're dressing up for a business meeting or going for a refined yet relaxed look, this checks shirt effortlessly elevates your style. With its impeccable craftsmanship and versatile design, our men's checks shirt is the perfect choice for the fashion-conscious man. Upgrade your wardrobe with this classic piece and make a statement of confidence and style. <br><br><strong>Price-Rs. 5500</strong></p>
+    </div>
+
+    <div class="product">
+      <img src="images\product3.jpg" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>Introducing our women's checks shirt, a timeless classic with a modern twist. This shirt features a stylish checkered pattern that adds a touch of sophistication to any outfit. Crafted with care from premium quality fabric, it offers a comfortable and flattering fit. The button-down design and classic collar make it suitable for both formal and casual occasions. Whether you're dressing up for the office or going for a relaxed weekend look, this checks shirt effortlessly combines style and versatility. Upgrade your wardrobe with our women's checks shirt and enjoy the perfect blend of fashion and comfort. <br><br><strong>Price-Rs. 2500</strong></p>
+    </div>
+
+    <div class="product">
+      <img src="images\product4.jpg" alt="Product 4">
+      <h3>Product 4</h3>
+      <p>Introducing our elegant women's formal shirt, a perfect blend of style and sophistication. Crafted with meticulous attention to detail, this shirt is designed to make a lasting impression. Made from high-quality fabrics, it offers a comfortable fit and excellent durability. The tailored silhouette accentuates your figure, while the classic collar and button-down front exude professionalism. Whether you're heading to the office or attending a formal event, this shirt is a versatile wardrobe staple. Elevate your style with our women's formal shirt and make a statement of confidence and elegance. <br><br><strong>Price-Rs. 1500</strong></p>
+    </div>
+  </main>
+
+  <div class="payment-button">
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Lvm04QnTKg737M" async> </script> </form>
+
+  </div>
+</body>
+</html>
